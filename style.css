@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+:root{
+    --color-primary-dark-cyan: #19a2ae;
+    --color-primary-dark-blue: #2d3248;
+    --color-primary-grayish-blue: #6a6f81;
+
+    --color-neutral-gray: #969696;
+
+    --font: 'Kumbh Sans', sans-serif;
+
+    /*font-size 18px*/
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+body{
+    min-height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items:center;
+    overflow: hidden;
+    background: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg) ;
+    background-repeat: no-repeat;
+    background-color: var(--color-primary-dark-cyan);
+    background-position: -700px -500px, 250px 250px;
+    background-attachment: fixed;
+    font-size: 18px;
+}
+
+.card{
+    max-width: 20rem;
+    max-height: 25rem;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    gap: 1rem;
+    margin: 5rem .5rem;
+    box-shadow: 0 0 3rem .5rem var(--color-primary-dark-blue);
+    border-radius: 15px;
+    background-color: #fff;
+}
+.card-img{
+    position: relative;
+    height: 9rem;
+    width: 20rem;
+    border-bottom: 1px solid var(--color-primary-grayish-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(images/bg-pattern-card.svg);
+    background-size: cover;
+    border-radius: 1rem 1rem 0 0;
+}
+img{
+    position: absolute;
+    object-fit: cover;
+    border-radius: 50%;
+    top: 100px;
+    border: 5px solid #fff;
+}
+.dados{
+    margin-top: 4rem;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.dados-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    padding-bottom: .5rem;
+}
+h3{
+    color: var(--color-primary-dark-blue);
+}
+p{
+    color: var(--color-neutral-gray);
+    font-size: 18px;
+}
+.lond{
+    font-size: 15px;
+}
+.number-card{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0 1rem;
+    padding: 1.5rem 2rem;
+    border-top: 1px solid var(--color-neutral-gray);
+}
+.number{
+    text-align: center;
+}
+span{
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: var(--color-primary-dark-blue);
+}
+.text{
+    font-size: 12px;
+    padding: .5rem;
+    letter-spacing: 1px;
+}
